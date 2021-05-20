@@ -1,6 +1,7 @@
 // import Vue from 'vue'
 import VueRouter from "vue-router";
 import Calculator from '../components/HelloWorld.vue'
+import Homepage from '../viues/homepage.vue'
 // Vue.use(VueRouter)
 const router= new VueRouter({
     mode:"history",
@@ -8,7 +9,12 @@ const router= new VueRouter({
         {
             path:'/calculator',
             component:Calculator
-        }
+        },
+        {
+            path:'/',
+            component:Homepage
+        },
+
     ]
 })
 export default router
