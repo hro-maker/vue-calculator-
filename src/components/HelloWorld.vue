@@ -119,6 +119,7 @@ export default {
 .wraper {
   width: 30%;
   min-height: 40%;
+  margin: 100px auto;
 }
 .black_board {
   width: 100%;
