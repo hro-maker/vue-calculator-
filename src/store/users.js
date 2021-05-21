@@ -19,6 +19,13 @@ export const usersmodeule={
     getters:{
          alluser(state){
              return state.users
-         }   
+         }  ,
+         getbyid(state,id){
+            
+             if(state.users){
+                return state.users.find((user)=>user.id== id)
+             }
+             return{}
+         }
     }
 }
