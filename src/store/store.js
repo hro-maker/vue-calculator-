@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import {Authmodule} from './authmodule'
+import {usersmodeule} from './users'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-  state: {
-    count: 6
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
+  modules:{
+    auth:Authmodule,
+    users:usersmodeule
   }
 })
 export default store

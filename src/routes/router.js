@@ -14,6 +14,10 @@ const router= new VueRouter({
             path:'/',
             component:Homepage
         },
+         {
+            path:'/users',
+            component:()=>{return import('../viues/users.vue')}
+        },
 
     ]
 })
